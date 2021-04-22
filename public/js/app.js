@@ -30,7 +30,7 @@ const messageTwo = document.querySelector('#p-2')
 weatherForm.addEventListener('submit',(e) => {   
     e.preventDefault()
     messageOne.textContent = "Loading...."
-    fetch('http://127.0.0.1:3000/weather?address='+search.value)
+    fetch('/weather?address='+search.value)
         .then((response) => {
             response.json()
             .then((data) => {
