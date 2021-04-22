@@ -27,16 +27,16 @@ app.get('/',(req,res) => {
 
 app.get('/about',(req,res) => {
     res.render('about',{
-        title: 'Title in app.js',
-        name: 'Name in app.js'
+        title: 'About',
+        name: 'Dipesh Viradiya'
     })
 })
 
 app.get('/help',(req,res) => {
     res.render('help',{
-        helpTxt : 'Help tecst diynamyxc :) ...',
-        title: 'titleeeeeeee',
-        name: 'nnnammmnnmmeee'
+        helpTxt : 'Help is available',
+        title: 'Help',
+        name: 'weather-app'
     })
 })
 
